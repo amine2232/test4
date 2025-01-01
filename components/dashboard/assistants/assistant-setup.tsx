@@ -21,6 +21,7 @@ import {
 import { HelpCircle, ChevronLeft } from "lucide-react";
 import { supabase } from "@/lib/supabase/client";
 import { toast } from "sonner";
+import { SpeechSettings } from "./settings/speech-settings";
 
 interface Assistant {
   id: string;
@@ -208,7 +209,7 @@ export function AssistantSetup() {
             <AccordionItem value="speech">
               <AccordionTrigger>Speech settings</AccordionTrigger>
               <AccordionContent>
-                Coming soon...
+                <SpeechSettings />
               </AccordionContent>
             </AccordionItem>
 
